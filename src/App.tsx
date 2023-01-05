@@ -91,7 +91,7 @@ export function App() {
             </div>
           }
 
-          { tasks.length &&
+          { tasks.length > 0 &&
             tasks.map((task) => {
               return (
                 <Task
