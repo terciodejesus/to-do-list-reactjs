@@ -1,0 +1,80 @@
+.wrapper {
+  max-width: 46rem;
+  margin: 2rem auto;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  .wrapper {
+    padding: 0 1rem;
+  }
+}
+
+.taskCountContent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.taskCount {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.taskCount strong {
+  font-size: 0.875rem;
+  color: var(--blue-100);
+  font-weight: bold;
+  line-height: 17px;
+}
+
+.taskCount:last-child strong {
+  color: var(--purple-100);
+}
+
+.taskCount span {
+  padding: 0.125rem 0.5rem;
+  background: var(--gray-400);
+  border-radius: 999px;
+  color: var(--gray-200);
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.taskEmptyContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+}
+
+.taskEmptyContent img {
+  margin-bottom: 1.25rem;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.taskEmptyContentText {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  color: var(--gray-300);
+}
+
+.taskEmptyContentText strong {
+  font-weight: bold;
+  line-height: 22.4px;
+}
+
+.taskEmptyContentText span {
+  line-height: 22.4px;
+}
