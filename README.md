@@ -1,6 +1,9 @@
 # ToDo List React App
 
-This is a [React](https://reactjs.org) + [TypeScript](https://www.typescriptlang.org/) boilerplate built with [Vite](https://vitejs.dev).
+This is a [React](https://reactjs.org) + [TypeScript](https://www.typescriptlang.org/) boilerplate built with [Vite](https://vitejs.dev). Check the demo <ins>[here](https://to-do-list-reactjs-eta.vercel.app/)</ins>
+
+## Demo
+[ToDo List App](https://to-do-list-reactjs-eta.vercel.app/)
 
 ## What's inside?
 
