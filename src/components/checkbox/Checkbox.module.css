@@ -1,0 +1,59 @@
+.checkboxWrapper label {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.checkboxWrapper label span {
+  color: var(--gray-100);
+}
+
+.checkboxWrapper label span.checkboxTextCompleted {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.checkboxContent {
+  line-height: 0;
+}
+
+.checkboxContent input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border: 2px solid var(--blue-100);
+  outline: none;
+  cursor: pointer;
+
+  transition: border, background 0.1s;
+}
+
+.checkboxContent input[type="checkbox"]:hover {
+  background: var(--blue-200);
+}
+
+.checkboxContent input[type="checkbox"]:checked {
+  background: var(--purple-200);
+  border: 2px solid var(--purple-200);
+  position: relative;
+
+  transition: border, background 0.1s;
+}
+
+.checkboxContent input[type="checkbox"]:checked:hover {
+  background: var(--purple-100);
+  border: 2px solid var(--purple-100);
+}
+
+.checkboxContent input[type="checkbox"]:checked::before {
+  content: "\2714";
+  font-size: 1em;
+  color: var(--white);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
